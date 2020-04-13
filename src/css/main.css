@@ -1,29 +1,26 @@
 /*NAVBAR*/
 
 #main-navbar {
-    background-color: rgba(0,0,0,0.01);
+    background-color: rgba(0, 0, 0, 0.01);
     position: absolute;
     width: 100%;
     backdrop-filter: blur(5px);
 }
 
-.navbar-dark .navbar-nav .nav-link{
-    color:white;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
 }
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: #E100FF;
-}
 
-.navbar-dark a.navbar-brand{
+.navbar-dark a.navbar-brand {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
-.navbar-dark .navbar-toggler{
+.navbar-dark .navbar-toggler {
     border-color: transparent;
 }
 
@@ -40,34 +37,80 @@
     background-color: #464646;
     height: 100vh;
     background-size: cover;
-    
-}
-    
-#hero h1 span{
-    font-weight: 400;    
+
 }
 
-#hero h1{
-    font-size: 2em;
+#hero h1 span {
+    font-weight: 400;
+}
+
+.herotext {
+    display: flex;
+}
+
+#hero h1 {
+    font-size: 1.35em;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 
+#main-info {
+    background: transparent linear-gradient(238deg, #7F00FF 0%, #E100FF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 1px 8px 28px #00000029;
+}
+
 /*DESKTOP*/
 
 @media only screen and (min-width: 768px) {
-    #hero h1{
-    font-size: 3em;
-}  
-    
-    .herotext{
-        display: flex;
-        margin-left: 10%;
+    #hero h1 {
+        font-size: 3em;
     }
-    
-    .navbar-light .navbar-nav .nav-link{
+
+    .herotext {
+        display: flex;
+        margin-left: 13%;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
         margin: 0 10px;
-}
+    }
+
+    #main-info {
+        margin-top: -100px;
+        max-height: 600px;
+        width: 70%;
+    }
+
+    #main-info img {
+        max-height: 420px;
+    }
+
+    #main-info h1 {
+        color: white;
+        padding-bottom: 30px;
+        text-align: end;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    #main-info p {
+        color: white;
+        text-align: justify;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.15em;
+        font-weight: 400;
+    }
+
+    #pic {
+        padding: 0px;
+    }
+
+    #info {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
 }
