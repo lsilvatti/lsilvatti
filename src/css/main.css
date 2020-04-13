@@ -1,25 +1,33 @@
+/*NAVBAR*/
+
 #main-navbar {
     background-color: rgba(0,0,0,0.01);
     position: absolute;
     width: 100%;
-    backdrop-filter: blur(5px));
+    backdrop-filter: blur(5px);
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link{
     color:white;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
 }
-.navbar-light .navbar-nav .nav-link:hover{
+.navbar-dark .navbar-nav .nav-link:hover{
     color: #E100FF;
 }
 
-.navbar-light a.navbar-brand{
+.navbar-dark a.navbar-brand{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
+.navbar-dark .navbar-toggler{
+    border-color: transparent;
+}
+
+/*HERO*/
 
 #hero {
     display: flex;
@@ -35,7 +43,6 @@
     
 }
     
-
 #hero h1 span{
     font-weight: 400;    
 }
@@ -46,6 +53,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
+
+/*DESKTOP*/
 
 @media only screen and (min-width: 768px) {
     #hero h1{
