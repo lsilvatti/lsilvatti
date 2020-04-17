@@ -4,6 +4,13 @@
     background-color: rgba(0, 0, 0, 0.01);
     width: 100%;
     backdrop-filter: blur(5px);
+    transition: all 0.3s ease; 
+}
+
+#main-navbar.offsetA{
+    background-color: rgba(127, 0, 255, 0.45);
+    width: 100%;
+    backdrop-filter: blur(5px);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -11,12 +18,22 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
+    transition: all 0.5s ease; 
 }
 
 .navbar-dark a.navbar-brand {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    transition: all 0.5s ease; 
+}
+
+.navbar-dark .navbar-nav .nav-link.blacktextA{
+    color:black;
+}
+
+a.navbar-brand.blacktextB{
+    color:black;
 }
 
 .navbar-dark .navbar-toggler {
@@ -193,7 +210,7 @@
 	animation-fill-mode: forwards;
 }
 
-.collapse a{
+.collapse .card-body a{
     color:#7F00FF;
     text-decoration: none;
     text-align: center

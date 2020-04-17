@@ -75,3 +75,19 @@ function InsideRotateArrow(element){
     var combi = document.querySelector(ultimatestring + " i");
     combi.classList.toggle("rotate-button");
 }
+
+
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+           // $(".nav-link").addClass("blacktextA");
+           // $("a.navbar-brand").addClass("blacktextB");
+            $("#main-navbar").addClass("offsetA");
+        }
+        if ($(this).scrollTop() < 100) {
+          //  $(".nav-link").removeClass("blacktextA");
+          //  $("a.navbar-brand").removeClass("blacktextB");
+            $("#main-navbar").removeClass("offsetA");
+        }
+    });
+});
