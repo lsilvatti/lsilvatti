@@ -77,6 +77,10 @@
     margin-top: 20px;
 }
 
+#info p{
+    text-align: justify
+}
+
 /*QUALITY CARDS*/
 
 #cards {
@@ -336,6 +340,7 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
+    text-align: justify;
     }
 
     .colexps {
@@ -372,5 +377,13 @@
     .trigger {
         display: none;
     }
+    
+    .desktop#educatitle {
+    display: flex;
+}
+
+.desktop#exptitle {
+    display: flex;
+}
 
 }
