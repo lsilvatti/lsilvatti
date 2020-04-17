@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <script src="https://kit.fontawesome.com/bfb175b869.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Leonardo Silvatti</title>
 </head>
 
 <body data-spy="scroll" data-target="main-navbar" data-offset="0">
-    <nav id="main-navbar" class="navbar navbar-expand-lg sticky-top navbar-dark mainavbar">
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top mainavbar">
         <a class="navbar-brand" href="#">Leonardo Silvatti</a>
 
 
@@ -50,11 +51,57 @@
     <div class="container-fluid" id="main-info">
         <div class="row">
             <div class="col-md-5" id="pic">
-                <img class="img-fluid" src="src/img/pp.jpg">
+                <img class="img-fluid pp" src="src/img/pp.jpg">
             </div>
             <div class="col-md-7" id="info">
                 <h1>Leonardo Silvatti Silva</h1>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="cards">
+        <div class="row row-of-cards">
+            <div class="col qcard">
+                <i class="fas fa-globe-americas fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            </div>
+            <div class="col qcard midcard">
+                <i class="fas fa-users fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            </div>
+            <div class="col qcard">
+                <i class="fas fa-desktop fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="sobre">
+        <div class="row">
+            <div class="col ed colexps section-1">
+               <h1 class="desktop" id="educatitle">Educação</h1>
+                <div id="educamobile" onclick="rotateArrow(this)" data-toggle="collapse" href="#mobileEdu" role="button" aria-expanded="false" aria-controls="mobileEdu" class="trigger"><h1 id="educatitle">Educação</h1>
+                    <i class="fas fa-chevron-down fa-2x mobile-trigger"></i></div>
+                <div class="collapse" id="mobileEdu">
+                    <div class="card card-body">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
+                        <a onclick="InsideRotateArrow(this)" data-toggle="collapse" href="#mobileEdu" role="button" aria-expanded="false" aria-controls="mobileEdu">Ver menos</a>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col prof colexps section-2">
+               <h1 class="desktop" id="exptitle">Exeperiências</h1>
+                <div id="expmobile" onclick="rotateArrow(this)" data-toggle="collapse" href="#mobileExp" role="button" aria-expanded="false" aria-controls="mobileExp" class="trigger"><h1 id="exptitle">Exeperiências</h1>
+                <i class="fas fa-chevron-down fa-2x mobile-trigger"></i></div>
+                <div class="collapse" id="mobileExp">
+                    <div class="card card-body">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
+                        <a onclick="InsideRotateArrow(this)" data-toggle="collapse" href="#mobileExp" role="button" aria-expanded="false" aria-controls="mobileExp">Ver menos</a>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</p>
             </div>
         </div>
     </div>

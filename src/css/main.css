@@ -2,7 +2,6 @@
 
 #main-navbar {
     background-color: rgba(0, 0, 0, 0.01);
-    position: absolute;
     width: 100%;
     backdrop-filter: blur(5px);
 }
@@ -22,6 +21,15 @@
 
 .navbar-dark .navbar-toggler {
     border-color: transparent;
+}
+
+.pp {
+    border-radius: 50%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 /*HERO*/
@@ -57,13 +65,178 @@
 
 
 #main-info {
-    background: transparent linear-gradient(238deg, #7F00FF 0%, #E100FF 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 1px 8px 28px #00000029;
+    background-color: transparent;
+    margin-top: -100px;
 }
 
-/*DESKTOP*/
+/*MAIN CARD*/
+
+#info h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/*QUALITY CARDS*/
+
+#cards {
+    margin-top: 50px;
+}
+
+.qcard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.qcard p {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.midcard {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.qcard i {
+    background: -webkit-linear-gradient(#7F00FF 0%, #E100FF 100%) 0% 0% no-repeat padding-box;
+    background: -o-linear-gradient(#7F00FF 0%, #E100FF 100%) 0% 0% no-repeat padding-box;
+    background: -moz-linear-gradient(#7F00FF 0%, #E100FF 100%) 0% 0% no-repeat padding-box;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/*SOBRE*/
+
+#sobre {
+    margin-top: 50px;
+}
+
+#exptitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#educatitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.colexps h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.colexps p {
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.15em;
+    font-weight: 400;
+    display: none;
+}
+
+.card p {
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.15em;
+    font-weight: 400;
+    display: block;
+}
+
+.trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colexps {
+    margin-top: 50px;
+}
+
+.trigger .mobile-trigger {
+    color: #7F00FF;
+}
+
+
+.desktop#educatitle {
+    display: none;
+}
+
+.desktop#exptitle {
+    display: none;
+}
+
+.mobile-trigger{
+    -webkit-animation: rotate-180 0.5s ease;
+	-moz-animation: rotate-180 0.5s ease;
+	-o-animation: rotate-180 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+.mobile-trigger.rotate-button{
+        -webkit-animation: rotate180 0.5s ease;
+	-moz-animation: rotate180 0.5s ease;
+	-o-animation: rotate180 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+.collapse a{
+    color:#7F00FF;
+    text-decoration: none;
+    text-align: center
+}
+
+
+@-webkit-keyframes rotate180 {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(180deg); }
+}
+
+@-moz-keyframes rotate180 {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(180deg); }
+}
+
+@-o-keyframes rotate180 {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(180deg); }
+}
+
+@-webkit-keyframes rotate-180 {
+	from { transform: rotate(180deg); }
+	to { transform: rotate(0deg); }
+}
+@-moz-keyframes rotate-180 {
+	from { transform: rotate(180deg); }
+	to { transform: rotate(0deg); }
+}
+@-o-keyframes rotate-180 {
+	from { transform: rotate(180deg); }
+	to { transform: rotate(0deg); }
+}
+
+
+/*-----------------DESKTOP-----------------*/
 
 @media only screen and (min-width: 768px) {
+
+    /*NAVBAR*/
+
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0 10px;
+    }
+
+    /*HERO*/
+
     #hero h1 {
         font-size: 3em;
     }
@@ -73,18 +246,14 @@
         margin-left: 13%;
     }
 
-    .navbar-light .navbar-nav .nav-link {
-        margin: 0 10px;
-    }
+    /*MAIN CARD*/
 
     #main-info {
         margin-top: -100px;
         max-height: 600px;
         width: 70%;
-    }
-
-    #main-info img {
-        max-height: 420px;
+        background: transparent linear-gradient(238deg, #7F00FF 0%, #E100FF 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 1px 8px 28px #00000029;
     }
 
     #main-info h1 {
@@ -105,12 +274,103 @@
 
     #pic {
         padding: 0px;
+        display: block;
     }
 
     #info {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
+
+    #info h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    .pp {
+        border-radius: 0%;
+        width: auto;
+    }
+
+    /*QUALITY CARDS*/
+
+    .qcard {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 40px;
+        box-shadow: 1px 8px 28px #00000029;
+    }
+
+    .midcard {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #cards {
+        margin-top: 100px;
+        width: 70%;
+    }
+
+    .card p {
+        text-align: center;
+    }
+
+    /*SOBRE*/
+
+    #sobre {
+        width: 70%;
+        margin-top: 100px;
+    }
+
+    .prof h1,
+    .prof p {
+        color: white;
+    }
+
+    .colexps p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .colexps {
+        padding: 50px 60px;
+    }
+
+    .prof {
+        background: #7F00FF 0% 0% no-repeat padding-box;
+        box-shadow: 1px 8px 28px #00000029;
+    }
+
+    #exptitle::after {
+        width: 60px;
+        margin-left: auto;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        height: 4px;
+        background-color: white;
+        content: "";
+    }
+
+    #educatitle::after {
+        width: 60px;
+        margin-left: auto;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        height: 4px;
+        background-color: #7F00FF;
+        content: "";
+    }
+
+    .trigger {
+        display: none;
+    }
+
 }

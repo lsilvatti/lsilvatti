@@ -54,3 +54,24 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+
+function rotateArrow(element){
+    var content = element.id;
+    var combo = document.querySelector("#" + content + " .mobile-trigger");
+    combo.classList.toggle("rotate-button");
+}
+
+function InsideRotateArrow(element){
+    var content = element.parentNode;
+    content = content.parentNode;
+    content = content.parentNode;
+    var combo = content.className;
+    var point = ".";
+    var b = combo.indexOf("section-");
+    var c = combo.substring(b);
+    console.log(c);
+    var ultimatestring = point.concat(c);
+    var combi = document.querySelector(ultimatestring + " i");
+    combi.classList.toggle("rotate-button");
+}
