@@ -64,5 +64,5 @@ I'm a **Senior Full Stack Engineer and Tech Lead** with over 7 years of experien
 <br>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lsilvatti&show_icons=true&theme=radical&hide_border=true" alt="Leonardo's GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api?username=lsilvatti&show_icons=true&theme=radical&hide_border=true" alt="Leonardo's GitHub Stats" />
 </p>
